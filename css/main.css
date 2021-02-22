@@ -1,4 +1,4 @@
-
+/**** MAIN STYLES ****/
 *{
 	box-sizing: border-box;
 }
@@ -44,8 +44,8 @@ p {
 	font-size: .875em;
 	line-height: 21px;
 }
+/**** HEADER****/
 
-/*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
@@ -88,8 +88,8 @@ header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
 }
+/**** TOP AND BOTTOM SECTIONS ****/
 
-/*The widths are in a percentage!*/
 .top-section {
 	margin: 0 auto;
 	display: flex;
@@ -161,7 +161,7 @@ header nav ul li a{
 	line-height: 24px;
 }
 
-/*The widths are in a percentage!*/
+/****FOOTER*****/
 footer {
 	border-top: 3px solid #eee;
 	margin: 0 auto;
@@ -214,27 +214,38 @@ p{
 @media all and (min-width:1200px) {
     /* Desktop styles here */
 
-	p{
+p{
 	padding: 0 30px;
 }
+
  .bottom-section{
 	 align-items: flex-start;
  }
+
  header {
 	flex-direction: row;
 	max-width: 1200px;
 	width: 100%;
 }
+
 header h1 {
 	border:none;
-	align-items: flex-start;
-	flex: 1 1 auto;
 	padding: 0;
+	width: 50%;
 }
-header nav ul li {
-	display: inline;
-	flex: 1 1 auto;
+
+header nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row;
+
 }
+header nav{
+	width: 40%
+	;
+}
+
 .section-one h3 {
 	padding: 10px 0;
 }
