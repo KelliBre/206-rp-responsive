@@ -1,3 +1,7 @@
+
+*{
+	box-sizing: border-box;
+}
 html{
 	font-size: 16px;
 }
@@ -50,6 +54,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-flow: column wrap;
+	max-width: 1200px;
 	width: 100%;
 }
 
@@ -77,6 +82,7 @@ header nav ul li {
 	font-size: .875em;
 	padding: 0;
 	margin: 20px;
+	flex:1 1 auto;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -91,15 +97,18 @@ header nav ul li a{
 	align-items: center;
 	flex-flow: row wrap;
 	width: 100%;
+	max-width: 1200px;
 }
 
 .bottom-section {
-	margin: 0 auto;
+	margin: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	flex-flow: row wrap;
+	max-width: 1200px;
+	height: auto;
 }
 
 .main-image {
@@ -129,8 +138,7 @@ header nav ul li a{
 .section-three {
 	width: 33%;
 	border-top: 1px solid #eee;
-	flex-basis: 200px;
-	flex-grow: 1;
+	flex: 1 1 200px;
 }
 
 .section-one h3 {
@@ -176,6 +184,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	max-width: 1200px;
 }
 footer span {
 	font-family: 'Galada', cursive;
